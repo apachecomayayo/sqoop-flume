@@ -1,12 +1,15 @@
 create database miTienda;
 
-create table if not exists miTienda.compras (
+use miTienda;
+
+create table if not exists compras (
 	id_compra INT AUTO_INCREMENT,
 	id_producto INT NOT NULL,
 	desc_producto VARCHAR(255) NOT NULL,
 	color VARCHAR(255) NOT NULL,
 	precio INT NOT NULL,
-	hora TIMESTAMP DEFAULT NOW()
+	hora TIMESTAMP DEFAULT NOW(),
+	primary key (id_compra)
 );
 
 insert into miTienda.compras (id_producto, desc_producto, color, precio) values (1, "CAMISA CUADROS", "ROJO", 20);
