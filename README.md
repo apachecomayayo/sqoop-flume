@@ -65,3 +65,7 @@ Importa la tabla compras a hive.
 
 
 ## Ejercicios Flume
+### Ejercicio 1
+Crea un agente Flume cuyo source sea telnet, su channel esté en memoria y su sink sea log mostrado en la consola.
+Y comprueba que el agente funciona enviando mensajes mediante el comando de consola telnet. 
+
